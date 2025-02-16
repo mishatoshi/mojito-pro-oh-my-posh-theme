@@ -4,19 +4,19 @@
     {
       "alignment": "left",
       "segments": [
-	    {
-		  "foreground": "#6CE083",
+        {
+          "foreground": "#6CE083",
           "style": "plain",
           "template": "\u250f",
           "type": "text"
         },
-	    {
+        {
           "foreground": "#F66055",
           "style": "plain",
           "template": "<#6CE083>[</>\uf0e7<#6CE083>]-</>",
           "type": "root"
         },
-		{
+        {
           "foreground": "#A3F5B5",
           "style": "plain",
           "template": "<#6CE083>[</>{{ if .WSL }}WSL at {{ end }}{{.Icon}}<#6CE083> </>",
@@ -28,7 +28,7 @@
           "template": "<#6CE083></>{{ .UserName }}<#6CE083>]</>",
           "type": "session"
         },
-		{
+        {
           "foreground": "#A3F5B5",
           "properties": {
             "style": "agnoster"
@@ -37,7 +37,7 @@
           "template": "<#6CE083>-[</>\ue5ff {{ .Path }}<#6CE083>]</>",
           "type": "path"
         },
-		{
+        {
           "foreground": "#FFED4D",
           "properties": {
             "branch_icon": "\ue725 ",
@@ -48,20 +48,31 @@
           "template": "<#6CE083>-[</>{{ .HEAD }}{{ if .Staging.Changed }}<#6CE083> \uf044 {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#55AEF6> \uf044 {{ .Working.String }}</>{{ end }}<#6CE083>]</>",
           "type": "git"
         },
-		{
+        {
           "foreground": "#A9DB70",
+          "properties": {
+            "fetch_version": true
+          },
           "style": "plain",
           "template": "<#6CE083>-[</>\ue781 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
           "type": "node"
         },
-		{
-		  "foreground": "#55AEF6",
+        {
+          "foreground": "#55AEF6",
+          "properties": {
+            "display_mode": "files",
+            "fetch_version": true
+          },
           "style": "plain",
           "template": "<#6CE083>-[</>\ue73d {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
-		  "type": "php"
+          "type": "php"
         },
-		{
+        {
           "foreground": "#FFED4D",
+          "properties": {
+            "display_mode": "files",
+            "fetch_virtual_env": false
+          },
           "style": "plain",
           "template": "<#6CE083>-[</>\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
           "type": "python"
@@ -72,14 +83,11 @@
           "template": "<#6CE083>-[</>\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
           "type": "java"
         },
-		{
-          "foreground": "#55AEF6",
-          "style": "plain",
-          "template": "<#6CE083>-[</>\ue77f {{ if .Unsupported }}\uf071{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
-          "type": "dotnet"
-        },
         {
           "foreground": "#4DEAFF",
+          "properties": {
+            "fetch_version": true
+          },
           "style": "plain",
           "template": "<#6CE083>-[</> {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
           "type": "go"
@@ -89,42 +97,6 @@
           "style": "plain",
           "template": "<#6CE083>-[</>\ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
           "type": "rust"
-        },
-        {
-          "foreground": "#F66055",
-          "style": "plain",
-          "template": "<#6CE083>-[</>\ue791 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
-          "type": "ruby"
-        },
-		{
-          "foreground": "#794DFF",
-          "style": "plain",
-          "template": "<#6CE083>-[</>\ue61f {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
-          "type": "haskell"
-        },
-		{
-          "foreground": "#D8F3E6",
-          "style": "plain",
-          "template": "<#6CE083>-[</><#F66055>\ue755</> {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
-          "type": "swift"
-        },
-        {
-          "foreground": "#55AEF6",
-          "style": "plain",
-          "template": "<#6CE083>-[</>\uf0e7 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
-          "type": "azfunc"
-        },
-        {
-          "foreground": "#FFB74D",
-          "style": "plain",
-          "template": "<#6CE083>-[</>\ue7ad {{.Profile}}{{if .Region}}@{{.Region}}{{end}}<#6CE083>]</>",
-          "type": "aws"
-        },
-        {
-          "foreground": "#55AEF6",
-          "style": "plain",
-          "template": "<#6CE083>-[</>\uf308 {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}<#6CE083>]</>",
-          "type": "kubectl"
         },
         {
           "foreground": "#A3F5B5",
@@ -142,7 +114,7 @@
       "alignment": "left",
       "newline": true,
       "segments": [
-		{
+        {
           "foreground": "#A3F5B5",
           "properties": {
             "always_enabled": true
@@ -151,9 +123,11 @@
           "template": "<#6CE083>\u2516[</>\ueba2 {{ .FormattedMs }}<#6CE083>]</>",
           "type": "executiontime"
         },
-		{
+        {
           "foreground": "#6CE083",
-          "foreground_templates": ["{{ if gt .Code 0 }}#F66055{{ end }}"],
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#F66055{{ end }}"
+          ],
           "properties": {
             "always_enabled": true
           },
