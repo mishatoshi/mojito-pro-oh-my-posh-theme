@@ -16,8 +16,8 @@
 
 ## Installation
 
-1. Install Oh My Posh [https://ohmyposh.dev](https://ohmyposh.dev)
-2. Download the raw file [mojito-pro.omp.json](https://github.com/mishatoshi/mojito-pro-oh-my-posh-theme/blob/main/mojito-pro.omp.json) and move it to the `oh-my-posh/themes` folder
+1. Install **Oh My Posh** [https://ohmyposh.dev](https://ohmyposh.dev)
+2. Download the **raw file** [mojito-pro.omp.json](https://github.com/mishatoshi/mojito-pro-oh-my-posh-theme/blob/main/mojito-pro.omp.json) and move it to the `oh-my-posh/themes` folder. Example of a **Windows** path: `C:\Program Files (x86)\oh-my-posh\themes\`.
 
 ## Activating Theme
 
