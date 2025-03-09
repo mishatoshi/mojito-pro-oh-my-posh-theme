@@ -7,34 +7,37 @@
         {
           "foreground": "#6CE083",
           "style": "plain",
-          "template": "\u250f",
+          "template": "\u250c ",
           "type": "text"
         },
         {
           "foreground": "#F66055",
           "style": "plain",
-          "template": "<#6CE083>[</>\uf0e7<#6CE083>]-</>",
+          "template": "\uf0e7 ",
           "type": "root"
         },
         {
           "foreground": "#A3F5B5",
           "style": "plain",
-          "template": "<#6CE083>[</>{{ if .WSL }}WSL at {{ end }}{{.Icon}}<#6CE083> </>",
+          "template": "<#6CE083></>{{ if .WSL }}WSL at {{ end }}{{.Icon}}<#6CE083> </>",
           "type": "os"
         },
         {
           "foreground": "#A3F5B5",
           "style": "plain",
-          "template": "<#6CE083></>{{ .UserName }}<#6CE083>]</>",
+          "template": "<#6CE083></>{{ .UserName }}<#6CE083> </>",
           "type": "session"
         },
         {
           "foreground": "#A3F5B5",
           "properties": {
+            "folder_icon": "\ue5fe",
+            "folder_separator_template": "<#6CE083> \u00bb </>",
+            "home_icon": "\ueb06",
             "style": "agnoster"
           },
           "style": "plain",
-          "template": "<#6CE083>-[</>\ue5ff {{ .Path }}<#6CE083>]</>",
+          "template": "<#6CE083>:: </>\ue5ff {{ .Path }}<#6CE083> </>",
           "type": "path"
         },
         {
@@ -45,7 +48,7 @@
             "fetch_upstream_icon": true
           },
           "style": "plain",
-          "template": "<#6CE083>-[</>{{ .HEAD }}{{ if .Staging.Changed }}<#6CE083> \uf044 {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#55AEF6> \uf044 {{ .Working.String }}</>{{ end }}<#6CE083>]</>",
+          "template": "<#6CE083>:: </>{{ .HEAD }}{{ if .Staging.Changed }}<#6CE083> \uf044 {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#55AEF6> \uf044 {{ .Working.String }}</>{{ end }}<#6CE083> </>",
           "type": "git"
         },
         {
@@ -54,7 +57,7 @@
             "fetch_version": true
           },
           "style": "plain",
-          "template": "<#6CE083>-[</>\ue781 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
+          "template": "<#6CE083>:: </>\ue781 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083> </>",
           "type": "node"
         },
         {
@@ -64,7 +67,7 @@
             "fetch_version": true
           },
           "style": "plain",
-          "template": "<#6CE083>-[</>\ue73d {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
+          "template": "<#6CE083>:: </>\ue73d {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083> </>",
           "type": "php"
         },
         {
@@ -74,13 +77,13 @@
             "fetch_virtual_env": false
           },
           "style": "plain",
-          "template": "<#6CE083>-[</>\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
+          "template": "<#6CE083>:: </>\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083> </>",
           "type": "python"
         },
         {
           "foreground": "#F66055",
           "style": "plain",
-          "template": "<#6CE083>-[</>\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
+          "template": "<#6CE083>:: </>\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083> </>",
           "type": "java"
         },
         {
@@ -89,22 +92,22 @@
             "fetch_version": true
           },
           "style": "plain",
-          "template": "<#6CE083>-[</> {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
+          "template": "<#6CE083>:: </> {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083> </>",
           "type": "go"
         },
         {
           "foreground": "#F68855",
           "style": "plain",
-          "template": "<#6CE083>-[</>\ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083>]</>",
+          "template": "<#6CE083>:: </>\ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#6CE083> </>",
           "type": "rust"
         },
         {
           "foreground": "#A3F5B5",
           "properties": {
-            "time_format": "_2, 15:04:05"
+            "time_format": "02/01/06 15:04"
           },
           "style": "plain",
-          "template": "<#6CE083>-[</>\uf073 {{ .CurrentDate | date .Format }}<#6CE083>]</>",
+          "template": "<#6CE083>:: </>\uf073 {{ .CurrentDate | date .Format }}<#6CE083> </>",
           "type": "time"
         }
       ],
@@ -120,7 +123,7 @@
             "always_enabled": true
           },
           "style": "plain",
-          "template": "<#6CE083>\u2516[</>\ueba2 {{ .FormattedMs }}<#6CE083>]</>",
+          "template": "<#6CE083>\u2514 </>\ueba2 {{ .FormattedMs }} <#6CE083></>",
           "type": "executiontime"
         },
         {
@@ -132,13 +135,14 @@
             "always_enabled": true
           },
           "style": "plain",
-          "template": "\u25b6",
+          "template": "\u276f\u276f",
           "type": "status"
         }
       ],
       "type": "prompt"
     }
   ],
+  "console_title_template": "{{if .Root}}[root] {{end}}{{.Shell}} in <{{.Folder}}>",
   "final_space": true,
   "version": 3
 }
