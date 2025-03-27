@@ -1,5 +1,13 @@
 # Mojito Pro for Oh My Posh
 
+## v1.2.0
+
+### Minor Changes
+
+- Added a new color palette
+
+___
+
 ## v1.1.0
 
 ### Minor Changes
