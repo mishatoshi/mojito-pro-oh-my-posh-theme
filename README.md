@@ -1,23 +1,30 @@
 <div align="center">
-  <img src="images/mojito-logo.png" width="100px" height="100px">
-  <h1>Mojito Pro for Oh My Posh</h1>
-  <h3>🍃 Easy on the eyes, boosting productivity!</h3>
+  <img src="images/mojito-pro-logo-full.png" height="150px">
+  <h1>Oh My Posh</h1>
 </div>
 
 <div align="center">
   <h2>User mode</h2>
-  <img src="images/mojito-pro.png">
+  <img src="images/MojitoPro.png">
 </div>
 
 <div align="center">
   <h2>Administrator mode</h2>
-  <img src="images/mojito-pro-admin.png">
+  <img src="images/MojitoProAdmin.png">
 </div>
 
 ## Installation
 
 1. Install **Oh My Posh** [https://ohmyposh.dev](https://ohmyposh.dev)
-2. Download the **raw file** [mojito-pro.omp.json](https://github.com/mishatoshi/mojito-pro-oh-my-posh-theme/blob/main/mojito-pro.omp.json) and move it to the `oh-my-posh/themes` folder. Example of a **Windows** path: `C:\Program Files (x86)\oh-my-posh\themes\`.
+1. Download the **raw file** [mojito-pro.omp.json](https://github.com/mishatoshi/mojito-pro-oh-my-posh-theme/blob/main/mojito-pro.omp.json) and save it where it is convenient for you
+1. Write down the path to your theme:
+    * Windows
+        * In Powershell, run `notepad $PROFILE`
+        * In the file **Microsoft.PowerShell_profile.ps1** write down the following path `oh-my-posh init pwsh --config 'WRITE DOWN THE PATH TO YOUR THEME' | Invoke-Expression`
+    * Linux
+        * In the file **.bashrc** write down the following path `eval "$(oh-my-posh init bash --config ~/WRITE DOWN THE PATH TO YOUR THEME)"`
+    * Mac
+        * In the file **.zshrc** write down the following path `eval "$(oh-my-posh init zsh --config ~/WRITE DOWN THE PATH TO YOUR THEME)"`
 
 ## Activating Theme
 
