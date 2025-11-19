@@ -26,10 +26,6 @@
     * Mac
         * In the file **.zshrc** write down the following path `eval "$(oh-my-posh init zsh --config ~/WRITE DOWN THE PATH TO YOUR THEME)"`
 
-## Activating Theme
-
-For instructions on activating this theme in **powershell**, **cmd**, **xsh**, **bash**, **fish** and **nu** please refer to the documentation [here](https://ohmyposh.dev/docs/installation/customize)
-
 ## Fonts
 
 Nerd Fonts are required for the Mojito Pro theme. To display all icons, the use of [Nerd Fonts](https://www.nerdfonts.com) is recommended. More information on fonts can be found [here](https://ohmyposh.dev/docs/installation/fonts)
