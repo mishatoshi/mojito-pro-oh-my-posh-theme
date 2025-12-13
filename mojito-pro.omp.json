@@ -5,13 +5,13 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#70DB86",
+          "foreground": "#A3F5B5",
           "style": "plain",
           "template": "\u250c ",
           "type": "text"
         },
         {
-          "foreground": "#F7776E",
+          "foreground": "#F66555",
           "style": "plain",
           "template": "\uf0e7 ",
           "type": "root"
@@ -19,86 +19,86 @@
         {
           "foreground": "#A3F5B5",
           "style": "plain",
-          "template": "<#70DB86></>{{ if .WSL }}WSL at {{ end }}{{.Icon}}<#70DB86> </>",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "type": "os"
         },
         {
           "foreground": "#A3F5B5",
           "style": "plain",
-          "template": "<#70DB86></>{{ .UserName }}<#70DB86> </>",
+          "template": "{{ .UserName }} ",
           "type": "session"
         },
         {
           "foreground": "#A3F5B5",
           "properties": {
             "folder_icon": "\ue5fe",
-            "folder_separator_template": "<#70DB86> \u00bb </>",
+            "folder_separator_template": " \u00bb ",
             "home_icon": "\ueb06",
             "style": "agnoster"
           },
           "style": "plain",
-          "template": "<#70DB86>:: </>\ue5ff {{ .Path }}<#70DB86> </>",
+          "template": "<#A3F5B5>::</> \ue5ff {{ .Path }} ",
           "type": "path"
         },
         {
-          "foreground": "#FFF066",
+          "foreground": "#F2E25A",
           "properties": {
             "branch_icon": "\ue725 ",
             "fetch_status": true,
             "fetch_upstream_icon": true
           },
           "style": "plain",
-          "template": "<#70DB86>:: </>{{ .HEAD }}{{ if .Staging.Changed }}<#70DB86> \uf044 {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#6CBAF9> \uf044 {{ .Working.String }}</>{{ end }}<#70DB86> </>",
+          "template": "<#A3F5B5>::</> {{ .HEAD }}{{ if .Staging.Changed }}<#70DB86> \uf044 {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#5DADEF> \uf044 {{ .Working.String }}</>{{ end }} ",
           "type": "git"
         },
         {
-          "foreground": "#B6E085",
+          "foreground": "#A9D775",
           "properties": {
             "fetch_version": true
           },
           "style": "plain",
-          "template": "<#70DB86>:: </>\ue781 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70DB86> </>",
+          "template": "<#A3F5B5>::</> \ue781 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "node"
         },
         {
-          "foreground": "#6CBAF9",
+          "foreground": "#5DADEF",
           "properties": {
             "display_mode": "files",
             "fetch_version": true
           },
           "style": "plain",
-          "template": "<#70DB86>:: </>\ue73d {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70DB86> </>",
+          "template": "<#A3F5B5>::</> \ue73d {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "php"
         },
         {
-          "foreground": "#FFF066",
+          "foreground": "#F2E25A",
           "properties": {
             "display_mode": "files",
             "fetch_virtual_env": false
           },
           "style": "plain",
-          "template": "<#70DB86>:: </>\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70DB86> </>",
+          "template": "<#A3F5B5>::</> \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "python"
         },
         {
-          "foreground": "#F7776E",
+          "foreground": "#F66555",
           "style": "plain",
-          "template": "<#70DB86>:: </>\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70DB86> </>",
+          "template": "<#A3F5B5>::</> \ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "java"
         },
         {
-          "foreground": "#71E5F4",
+          "foreground": "#5AE0F2",
           "properties": {
             "fetch_version": true
           },
           "style": "plain",
-          "template": "<#70DB86>:: </> {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70DB86> </>",
+          "template": "<#A3F5B5>::</>  {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "go"
         },
         {
-          "foreground": "#FFAD66",
+          "foreground": "#F0682D",
           "style": "plain",
-          "template": "<#70DB86>:: </>\ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70DB86> </>",
+          "template": "<#A3F5B5>::</> \ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "rust"
         },
         {
@@ -107,7 +107,7 @@
             "time_format": "02/01/06 15:04"
           },
           "style": "plain",
-          "template": "<#70DB86>:: </>\uf073 {{ .CurrentDate | date .Format }}<#70DB86> </>",
+          "template": "<#A3F5B5>::</> \uf073 {{ .CurrentDate | date .Format }} ",
           "type": "time"
         }
       ],
@@ -119,17 +119,25 @@
       "segments": [
         {
           "foreground": "#A3F5B5",
-          "properties": {
-            "always_enabled": true
-          },
           "style": "plain",
-          "template": "<#70DB86>\u2514 </>\ueba2 {{ .FormattedMs }} <#70DB86></>",
-          "type": "executiontime"
+          "template": "\u2514",
+          "type": "text"
         },
         {
-          "foreground": "#70DB86",
+          "type": "executiontime",
+          "style": "plain",
+          "foreground": "#A3F5B5",
+          "template": " \ueba2 {{ .FormattedMs }} ",
+          "properties": {
+            "threshold": 500,
+            "style": "austin",
+            "always_enabled": true
+          }
+        },
+        {
+          "foreground": "#A3F5B5",
           "foreground_templates": [
-            "{{ if gt .Code 0 }}#F7776E{{ end }}"
+            "{{ if gt .Code 0 }}#F66555{{ end }}"
           ],
           "properties": {
             "always_enabled": true
