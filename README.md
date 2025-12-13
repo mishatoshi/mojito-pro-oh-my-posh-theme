@@ -1,16 +1,16 @@
 <div align="center">
-  <img src="images/mojito-pro-logo-full.png" height="150px">
+  <img src="images/MojitoPro-LogoBig.png" height="150px">
   <h1>Oh My Posh</h1>
 </div>
 
 <div align="center">
   <h2>User mode</h2>
-  <img src="images/MojitoPro.png">
+  <img src="images/mojito-pro.png">
 </div>
 
 <div align="center">
   <h2>Administrator mode</h2>
-  <img src="images/MojitoProAdmin.png">
+  <img src="images/mojito-pro-admin.png">
 </div>
 
 ## Installation
@@ -39,5 +39,3 @@ Nerd Fonts are required for the Mojito Pro theme. To display all icons, the use 
 ## License
 
 [MIT License](./LICENSE)
-
-<h3 align="center">Don’t worry, be happy😍</h3>
