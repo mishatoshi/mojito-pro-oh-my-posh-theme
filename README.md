@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/mojito-pro-logo-full.png" height="150px">
+  <img src="images/MojitoPro-LogoBig.png" height="150px">
   <h1>for Oh My Posh</h1>
 </div>
 
