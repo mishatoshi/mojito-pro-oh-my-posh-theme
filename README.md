@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/MojitoPro-LogoBig.png" height="150px">
+  <img src="images/mojito-pro-large.png" height="150px">
   <h1>for Oh My Posh</h1>
 </div>
 
@@ -34,7 +34,6 @@ Nerd Fonts are required for the Mojito Pro theme. To display all icons, the use 
 
 * Windows Terminal, PowerShell, CMD [https://github.com/mishatoshi/mojito-pro-windows-terminal](https://github.com/mishatoshi/mojito-pro-windows-terminal)
 * Visual Studio Code [https://github.com/mishatoshi/mojito-pro-vscode-theme](https://github.com/mishatoshi/mojito-pro-vscode-theme)
-* Flow Launcher [https://github.com/mishatoshi/mojito-pro-flowlauncher-theme](https://github.com/mishatoshi/mojito-pro-flowlauncher-theme)
 
 ## License
 
