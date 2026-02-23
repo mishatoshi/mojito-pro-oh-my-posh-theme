@@ -1,16 +1,16 @@
 <div align="center">
-  <img src="images/mojito-pro-large.png" height="150px">
+  <img src="images/m-pro-logo-big.png" height="150px">
   <h1>for Oh My Posh</h1>
 </div>
 
 <div align="center">
   <h2>User mode</h2>
-  <img src="images/mojito-pro.png">
+  <img src="images/m-pro.png">
 </div>
 
 <div align="center">
   <h2>Administrator mode</h2>
-  <img src="images/mojito-pro-admin.png">
+  <img src="images/m-pro-admin.png">
 </div>
 
 ## Installation
