@@ -1,5 +1,14 @@
 # Mojito Pro for Oh My Posh
 
+## v1.3.1
+
+### Patch Changes
+
+- Fix: Replacing the yellow color for **Python** and **git**
+- Fix: Upgrade to version 4, replacing the "properties" object with "options"
+
+___
+
 ## v1.3.0
 
 ### Minor Changes
