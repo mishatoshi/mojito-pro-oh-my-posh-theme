@@ -30,7 +30,7 @@
         },
         {
           "foreground": "#A3F5B5",
-          "properties": {
+          "options": {
             "folder_icon": "\ue5fe",
             "folder_separator_template": " \u00bb ",
             "home_icon": "\ueb06",
@@ -41,8 +41,8 @@
           "type": "path"
         },
         {
-          "foreground": "#F2E25A",
-          "properties": {
+          "foreground": "#EDDF5E",
+          "options": {
             "branch_icon": "\ue725 ",
             "fetch_status": true,
             "fetch_upstream_icon": true
@@ -53,7 +53,7 @@
         },
         {
           "foreground": "#A9D775",
-          "properties": {
+          "options": {
             "fetch_version": true
           },
           "style": "plain",
@@ -62,7 +62,7 @@
         },
         {
           "foreground": "#5DADEF",
-          "properties": {
+          "options": {
             "display_mode": "files",
             "fetch_version": true
           },
@@ -71,8 +71,8 @@
           "type": "php"
         },
         {
-          "foreground": "#F2E25A",
-          "properties": {
+          "foreground": "#EDDF5E",
+          "options": {
             "display_mode": "files",
             "fetch_virtual_env": false
           },
@@ -88,7 +88,7 @@
         },
         {
           "foreground": "#5AE0F2",
-          "properties": {
+          "options": {
             "fetch_version": true
           },
           "style": "plain",
@@ -103,7 +103,7 @@
         },
         {
           "foreground": "#A3F5B5",
-          "properties": {
+          "options": {
             "time_format": "02/01/06 15:04"
           },
           "style": "plain",
@@ -128,7 +128,7 @@
           "style": "plain",
           "foreground": "#A3F5B5",
           "template": " \ueba2 {{ .FormattedMs }} ",
-          "properties": {
+          "options": {
             "threshold": 500,
             "style": "austin",
             "always_enabled": true
@@ -139,7 +139,7 @@
           "foreground_templates": [
             "{{ if gt .Code 0 }}#F66555{{ end }}"
           ],
-          "properties": {
+          "options": {
             "always_enabled": true
           },
           "style": "plain",
@@ -152,5 +152,5 @@
   ],
   "console_title_template": "{{if .Root}}[root] {{end}}{{.Shell}} in <{{.Folder}}>",
   "final_space": true,
-  "version": 3
+  "version": 4
 }
